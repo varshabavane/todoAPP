@@ -6,26 +6,26 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  items;
+  items = [];
 
   constructor(public navCtrl: NavController) {
 
   }
 
 
-  ionViewdidLoad(){
+  ionViewDidLoad() {
     this.items = [
-      {title: 'hi', description:'here you are'},
-      {title:'hello', description:'hey'},
-    {title:'hey',description:'jyane'}
+      { title: 'hi', description: 'here you are' },
+      { title: 'hello', description: 'hey' },
+      { title: 'hey', description: 'jyane' }
 
     ]
   }
-  addIem(){
+  addItem() {
     alert('add item works')
   }
 
-  viewItem(){
+  viewItem(item) {
     alert('this is your item' + JSON.stringify(item))
   }
 

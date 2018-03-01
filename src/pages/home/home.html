@@ -1,22 +1,22 @@
 <ion-header>
-  <ion-navbar color:"primary">
-    <ion-title align:"centre">
+  <ion-navbar color="primary">
+    <ion-title align="center">
       TO-DO App
     </ion-title>
-</button>
-<ion-button end>
-    <button  ion-button icon-only (click)="additem()">
-        <ion-icon name="addcircle"></ion-icon>
-      
-</ion-button>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addItem()">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<ion-list>
-  <ion-item *ngFor"let items of item" (click)="viewItem(item)">{
-    {item.title}}
-  </ion-item>
-</ion-list>
+  <ion-list>
+    <ion-item *ngFor="let item of items" (click)="viewItem(item)">
+      {{item.title}}
+    </ion-item>
+  </ion-list>
 
 </ion-content>
