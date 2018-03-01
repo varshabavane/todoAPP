@@ -13,8 +13,8 @@ import { AddItemsPage } from '../pages/add-items/add-items';
     MyApp,
     HomePage,
     AddItemsPage
-  
-  
+
+
   ],
   imports: [
     BrowserModule,
@@ -24,13 +24,13 @@ import { AddItemsPage } from '../pages/add-items/add-items';
   entryComponents: [
     MyApp,
     HomePage,
-  
-  
+    AddItemsPage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

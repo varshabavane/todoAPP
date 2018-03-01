@@ -1,18 +1,35 @@
-<!--
-  Generated template for the AddItemsPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
+
+
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>addItems</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
-<ion-content padding>
+  <ion-toolbar color="primary"></ion-toolbar>
+  <ion-title>addItems</ion-title>
 
-</ion-content>
+  <ion-buttons end>
+    <button ion-button icon-only (click)="close()">
+      <ion-icon name="close"></ion-icon>
+    </button>
+    </ion-buttons>
+    </ion-header>
+
+ 
+
+    <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label Floating>title</ion-label>
+        <ion-input type="text"[(ngModel)]="title"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label Floating>Description</ion-label>
+          <ion-input type="text"[(ngModel)]="description"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+      <button full ion-button color="primary" (click)="saveItem()"></button>
+      </ion-content>
+
+
