@@ -13,7 +13,7 @@ export class AddItemsPage {
   }
 
 
-  saveItems() {
+  saveItem() {
     let newItem = {
       title: this.title,
       description: this.description
